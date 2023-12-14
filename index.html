@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Courses to Shopping Cart</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.jpg" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Зображення</th>
+                                                <th>Назва</th>
+                                                <th>Ціна</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">Очистити корзину</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="hero-content">
+                                <h2>Вивчи щось сьогодні</h2>
+                                <p>Спеціальна пропозиція, всі курси по $15</p>
+                                <form action="#" id="search" method="post" class="form">
+                                    <input class="u-full-width" type="text" placeholder="Що ви хочите вивчити? " id="search-course">
+                                    <input type="submit" id="submit-search-course" class="submit-search-course">
+                                </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bar">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icon icon1">
+                        <p>20,000 онлайн курсів <br>
+                        Вивчи нові навички</p>
+                    </div>
+                    <div class="four columns icon icon2">
+                        <p>Проффесіональні Існтруктори<br>
+                        Вивчи різними способами навчання</p>
+                    </div>
+                    <div class="four columns icon icon3">
+                        <p>Доступ на все життя <br>
+                        Учись в своєму темпі</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="courses-list" class="container">
+        <h1 id="heading" class="heading">Онлайн Курси</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course1.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>HTML5, CSS3, JavaScript для початківців</h4>
+                        <p>Джуан Педро</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Додати в корзину</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course2.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Кулінарний курс</h4>
+                            <p>Діана Будорець</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Додати в корзину</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course3.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Гітара для початківців</h4>
+                            <p>Виллиам Данро</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Додати в корзину</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course4.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Садівницство у домі</h4>
+                        <p>Мілія Фанареско</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Додати в корзину</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course5.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Декорація дому задопомогою перероблених продуктоів</h4>
+                            <p>Майк Гавер</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">Додати в корзину</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course1.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Веб-дизайн для початківців</h4>
+                            <p>Алекс Дипвуд</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">Додати в корзину</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course2.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Навчись готовити мексиканьску їжу</h4>
+                        <p>Нира Декруссо</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">Додати в корзину</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course3.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Створити музикальну студію</h4>
+                            <p>Даниель Магбур</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">Додати в корзину</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course4.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Виращувати свої овочі та фрукти</h4>
+                            <p>Анна Малинова</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="9">Додати в корзину</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/course5.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Готовити домашьне печиво</h4>
+                            <p>Дарус Картолос</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="10">Додати в корзину</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/course1.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>Сучасний JavaScript</h4>
+                                <p>Майкл Леддингтон</p>
+                                <img src="img/stars.png">
+                                <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="11">Додати в корзину</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/course2.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>100 Натуральних рецептів</h4>
+                                <p>Джулія Картор</p>
+                                <img src="img/stars.png">
+                                <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="12">Додати в корзину</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="primary" class="menu">
+                                <a class="link" href="#">Для Бізнесу</a>
+                                <a class="link" href="#">Стати Інструктором</a>
+                                <a class="link" href="#">Мобільна Версія</a>
+                                <a class="link" href="#">Связок</a>
+                                <a class="link" href="#">Допомога</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secondary" class="menu">
+                                <a class="link" href="#">Про нас</a>
+                                <a class="link" href="#">Працювати з нами</a>
+                                <a class="link" href="#">Влог</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
